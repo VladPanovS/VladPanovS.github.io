@@ -27,7 +27,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #d7b443;
 }
 .button:hover{
   border: 1px solid #d7b443;
@@ -281,8 +281,8 @@ header {
   width: 10em;
   height: 10em;
   border-radius: 50%;
-  background: #8e8d8d;
-  color: #fff;
+  border: 1px solid #e9c443;
+  color: #8e8d8d;
   margin: 5px;
 }
 .my_skills_hover_box {
@@ -292,7 +292,7 @@ header {
   display: none;
   height: 100%;
   width: 100%;
-  background: #8e8d8d;
+  background: #fff;
   border-radius: 50%;
 }
 .my_skills li:hover .my_skills_hover_box{

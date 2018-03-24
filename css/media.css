@@ -1,11 +1,26 @@
 @media(max-width: 768px){
+  .who_i_am article, .my_skills article{
+    width: 90%;
+    text-indent: 0;
+  }
   .what_i_do_wrapper li{
   width: calc(50% - 2px);
   }
   .soon{
     display: none;
   }
+  .contact_wrapper ul{
+    flex-wrap: wrap-reverse;
+  }
+  .contact_wrapper_text{
+    width: 65%;
+  }
 }
+@media (max-width: 375px){
+  .contact_wrapper_text{
+    width: 85%;
+  }
+  }
 @media(min-width: 1440px){
   .who_i_am article, .my_skills article{
     width: 30%;

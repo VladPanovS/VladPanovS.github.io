@@ -24,10 +24,11 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid #d7b443;
+  color: #4d5c66;
 }
 .button:hover{
-  border: 1px solid #d7b443;
+  color: #d7b443;
 }
 .wrapper{
   display: flex;
