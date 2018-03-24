@@ -1,0 +1,356 @@
+/*---GENERAL STYLES---*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.title {
+  color: #d7b443;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.subtitle {
+  color: #4d5c66;
+  font-size: 3.5vw;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+.th_line{
+  text-decoration: line-through;
+}
+.button{
+  display: inline-block;
+  line-height: 2.5;
+  width: 15em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  border: 1px solid #000;
+}
+.button:hover{
+  border: 1px solid #d7b443;
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  margin: 4em 0;
+}
+/*---A---*/
+a {
+color: #000;
+text-decoration: none;
+}
+a :visited {
+  color: #bbb;
+  transition: color 0.5s linear;
+}
+a:hover {
+  color: #d7b443;
+ }
+a:active{
+  color: #4d5c66;
+}
+/*---GENERAL STYLES---*/
+
+/*---lets go---*/
+header {
+  min-height: 100vh;
+  height: 100vh;
+  background: url("../img/bg/header_bg.png") no-repeat top center;
+  background-size: cover;
+}
+.logo_nav {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px;
+}
+.logo a{
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 72px;
+  text-decoration: none;
+}
+ nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ /*---Chechbox---*/
+     /*---Burger menu---*/
+        .burger_aside_menu {
+          display: inline-block;
+        }
+        .burger_aside_menu span{
+          display: block;
+          background: #bbb;
+          height: 4px;
+          margin: 5px;
+          width: 30px;
+        }
+        label{
+          cursor: pointer;
+        }
+    /*---Burger menu---*/
+    /*---Checkbox process---*/
+    .checkbox_trigger {
+      display: none;
+
+    }
+    .aside_menu{
+      display: none;
+      background: rgba(255, 255, 255, 0.5);
+      border-top-left-radius: 13px;
+      border-bottom-left-radius: 13px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 15em;
+      height: 40vh;
+      text-align: center;
+      animation: fadeIn 0.5s;
+    }
+    .aside_menu li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 25%;
+    }
+    .aside_menu li:hover{
+      background: #f9f6f6;
+    }
+    .aside_menu li:first-child{
+      border-top-left-radius: 13px;
+    }
+    .aside_menu li:last-child{
+      border-bottom-left-radius: 13px;
+    }
+
+    /*---Checkbox--Burger menu--Change while active---*/
+
+    .checkbox_trigger:checked ~ .aside_menu {
+      display: flex;
+    }
+    .checkbox_trigger:checked ~ label span:nth-child(1){
+      transform: rotate(45deg);
+      transition: 0.5s;
+      position: fixed;
+      top: 1em;
+      right: 12em;
+      z-index: 6;
+    }
+    .checkbox_trigger:checked ~ label span:nth-child(2){
+      display: none;
+    }
+    .checkbox_trigger:checked ~ label span:nth-child(3){
+      transform: rotate(-45deg);
+      transition: 0.5s;
+      position: fixed;
+      top: 1em;
+      right: 12em;
+      z-index: 6;
+    }
+    /*---Checkbox process---*/
+/*---Checkbox---*/
+
+
+.title_wrap{
+  height: calc(100% - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_title{
+  font-family: "Plume";
+  font-size: 10vw;
+  color: #fff;
+}
+/*---HEADER---*/
+/*---WHO i AM---*/
+.who_i_am article {
+  font-weight: 100;
+  width: 50%;
+  line-height: 2;
+  text-indent: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+  /*---WHO I AM ICONS---*/
+  .who_i_am_info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+  .fab{
+    font-size: 2em;
+    color: #d7b443;
+    transition: color 0.5s linear;
+  }
+  .fab.fa-facebook-f:before{
+    content: "\f39e";
+  }
+  .fab.fa-facebook-f:hover{
+    color: #3f51b5;
+  }
+  .fab.fa-instagram:before{
+    content: "\f16d";
+  }
+  .fab.fa-instagram:hover{
+    color: #ff1293;
+  }
+  .fab.fa-linkedin:before{
+    content: "\f08c";
+  }
+
+  .fab.fa-linkedin:hover{
+      color: #3f51b5;
+  }
+  .fab.fa-github::before{
+    content: "\f09b";
+  }
+  .fab.fa-github:hover{
+    color: #000;
+  }
+  /*--- ---*/
+/*---WHO I AM---*/
+/*---WHAT I DO---*/
+.what_i_do_wrapper ul{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.what_i_do_wrapper li{
+  width: calc(20% - 2px);
+  position: relative;
+  border: 1px solid #bbb;
+}
+.soon:hover{
+  background: url("../img/icons/icon_fox.png") no-repeat center center;
+  background-size: contain;
+  opacity: 0.3;
+}
+.what_i_do_wrapper img{
+  width: 100%;
+}
+.hover_box{
+  color: #000;
+  font-weight: 600;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.what_i_do_wrapper li:hover .hover_box{
+  display: flex;
+}
+/*---MY SKILLS---*/
+.my_skills article {
+  font-weight: 100;
+  width: 50%;
+  line-height: 2;
+  text-indent: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.my_skills ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.my_skills li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: #8e8d8d;
+  color: #fff;
+  margin: 5px;
+}
+.my_skills_hover_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: #8e8d8d;
+  border-radius: 50%;
+}
+.my_skills li:hover .my_skills_hover_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+}
+/*---MY SKILLS---*/
+/*---CONTACT---*/
+.contact_wrapper ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 100;
+  margin-bottom: 1.5em;
+}
+.contact_wrapper_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 1%;
+}
+.contact_wrapper_text div{
+  line-height: 2;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1%;
+}
+.contact_wrapper_picture{
+  width: 20em;
+}
+.contact_wrapper img{
+  border-radius: 25px;
+  width: 100%;
+}
+.contact_wrapper_info {
+  width: 80%;
+}
+.fab.fa-google:before{
+  content: "\f1a0";
+}
+.fab.fa-google:hover{
+  color: #00b910;
+}
+.fab.fa-youtube:before{
+  content: "\f167";
+}
+.fab.fa-youtube:hover{
+  color: #e21b1b;
+}
+/*---CONTACT---*/
+/*---FOOTER---*/
+footer{
+  display: block;
+  background: #4d5c66;
+  color: #5d6d77;
+  line-height: 2;
+  }

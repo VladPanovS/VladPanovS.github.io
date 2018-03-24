@@ -1,0 +1,13 @@
+@media(max-width: 768px){
+  .what_i_do_wrapper li{
+  width: calc(50% - 2px);
+  }
+  .soon{
+    display: none;
+  }
+}
+@media(min-width: 1440px){
+  .who_i_am article, .my_skills article{
+    width: 30%;
+  }
+}
