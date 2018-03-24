@@ -1,0 +1,172 @@
+/*---General styles---*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.title {
+  color: #d7b443;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.subtitle {
+  color: #4d5c66;
+  font-size: 3.5vw;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+.button{
+  display: inline-block;
+  line-height: 2.5;
+  width: 15em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  border: 1px solid #000;
+}
+.button:hover{
+  border: 1px solid #d7b443;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*---General styles---*/
+/*---Logos---*/
+.fab{
+  font-size: 2em;
+  color: #d7b443;
+}
+.fab.fa-facebook-f:before{
+  content: "\f39e";
+}
+.fab.fa-facebook-f:hover{
+    color: #3f51b5;
+    transition: 0.5s;
+}
+.fab.fa-instagram:before{
+  content: "\f16d";
+}
+.fab.fa-instagram:hover{
+  color: #ff1293;
+  transition: 0.5s;
+}
+.fab.fa-linkedin:before{
+  content: "\f08c";
+}
+.fab.fa-linkedin:hover{
+    color: #3f51b5;
+    transition: 0.5s;
+}
+.fab.fa-github::before{
+  content: "\f09b";
+}
+.fab.fa-github:hover{
+  color: #000;
+  transition: 0.5s;
+}
+.fab.fa-google:before{
+  content: "\f1a0";
+}
+.fab.fa-google:hover{
+  color: #00b910;
+  transition: 0.5s;
+}
+.fab.fa-youtube:before{
+  content: "\f167";
+}
+.fab.fa-youtube:hover{
+  color: #e21b1b;
+  transition: 0.5s;
+}
+/*---MAIN---*/
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.text {
+  text-align: center;
+  font-weight: 100;
+  width: 50%;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+img {
+  width: 15em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+.main_wrapper_infoskills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: 100;
+  margin-bottom: 1.5em;
+}
+.who_i_am_skills{
+  height: 20em;
+  width: 20em;
+  margin-right: 1em;
+}
+.main_wrapper_infoskills-logos{
+  display: flex;
+  justify-content: space-between;
+}
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/*--TABS FRAME-- not mine*/
+.tabs {
+	position: relative;
+}
+.tabs:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 240px;
+}
+.tabs li {
+	float: left;
+}
+.tabs li > input {
+	display: none;
+}
+.tabs li > label {
+	display: inline-block;
+	border: 1px solid #999;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+.tabs li:last-child > label {
+	border-right-width: 1px;
+}
+.tabs .tab-content {
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 20px;
+	border: 1px solid #999;
+	height: 200px;
+	overflow-y: auto;
+  line-height: 1.5;
+}
+
+/* Функциональность: */
+
+.tabs li > input:checked + label {
+	background-color: #999;
+}
+.tabs li > input:checked ~ .tab-content {
+	display: block;
+}
