@@ -1,28 +1,38 @@
-@media(max-width: 768px){
-  .who_i_am article, .my_skills article{
-    width: 90%;
-    text-indent: 0;
-  }
-  .what_i_do_wrapper li{
-  width: calc(50% - 2px);
-  }
-  .soon{
-    display: none;
-  }
-  .contact_wrapper ul{
-    flex-wrap: wrap-reverse;
-  }
-  .contact_wrapper_text{
-    width: 65%;
-  }
-}
-@media (max-width: 375px){
-  .contact_wrapper_text{
-    width: 85%;
-  }
-  }
-@media(min-width: 1440px){
-  .who_i_am article, .my_skills article{
-    width: 30%;
-  }
+@media (max-width: 768px) {
+    /*Products*/
+    .fur-let, .d-let, .deco-let, .f-let {
+      display: none;
+    }
+    /*Quality*/
+    .quality-list li {
+      margin: 0.3em;
+    }
+    /*Video*/
+    .video-content {
+      height: auto;
+      width: 90%;
+    }
+    .video-title {
+      font-size: 1.5em;
+    }
+    .video-content li:nth-child(2), .video-content li:last-child {
+      margin: 0;
+    }
+    .video-content li:last-child {
+      text-align: center;
+    }
+      /*About*/
+    .product-list-one li:first-child h2::before, .product-list-one li:first-child p::before,
+    .product-list-two li:last-child h2::after, .product-list-two li:last-child p::after,
+    .about-list::before, .about-list::after, .about-list li:last-child::before, .about-list li:last-child::after, .number {
+      content: "";
+      display: none;
+    }
+    .product-list-one li:first-child, .about-list li:last-child {
+      padding: 0 2%;
+    }
+    /*Footer*/
+    footer div {
+      justify-content: center;
+    }
 }
