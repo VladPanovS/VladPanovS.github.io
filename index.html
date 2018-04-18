@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo_icon.png" type="image/png">
+    <title>VooP</title>
+    <!---FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!---CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/media.css">
+
+  </head>
+
+  <body>
+    <a id="top"></a>
+    <header>
+      <div class="nav_wrapper">
+        <nav id="menu">
+          <a href="#top">На главную</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#about">О нас</a>
+          <a href="#buy">Как заказать?</a>
+        </nav>
+        <div class="menu" id="tablet">
+          <input type="checkbox" id="hmt" class="checkbox_trigger">
+            <label for="hmt">
+              <p>Меню</p>
+            </label>
+            <ul class="aside_menu">
+              <li><a href="#top">На главную</a></li>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#buy">Как заказать?</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="logo_socials_wrapper align">
+        <ul class="logo_socials align">
+          <li class="logo-icons align">
+            <a href="#" class="header_icon"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/vooptoys/" target="_blank" class="header_icon"><i class="fab fa-instagram "></i></a>
+            <a href="#" class="header_icon"><i class="fab fa-pinterest"></i></a>
+          </li>
+          <li class="logo-pic">
+            <img src="img/logo.png" alt="logo VooP">
+          </li>
+        </ul>
+      </div>
+      <div class="header_arrow align" id="arrow">
+        <a href="#catalog" class="arrow_link"><img src="img/icons/arrow.png" alt="arrow header"></a>
+      </div>
+    </header>
+    <main>
+      <section class="catalog align">
+        <a id="catalog"></a>
+        <h2 class="sect_title">Каталог</h2>
+        <ul class="catalog_list">
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+          <li class="align">
+            <img src="img/pic/infitem.png" alt="loadpicture">
+            <a href="#"><i class="fas fa-shopping-bag buy_icon"></i></a>
+          </li>
+        </ul>
+      </section>
+      <section class="about_us align">
+        <a id="about"></a>
+        <div class="about_logo_tagline align">
+          <img src="img/logo2.png" alt="logo voop">
+          <p class="about_tagline"><i class="fas fa-quote-left"></i>Вырази свои чувства<i class="fas fa-quote-right"></i></p>
+        </div>
+        <ul class="about_icons align">
+          <li class="align">
+            <i class="fas fa-truck about_icon"></i>
+            <p>Доставка от 1 до 3 дней</p>
+          </li>
+          <li class="align">
+            <i class="fas fa-globe about_icon"></i>
+            <p>Сделано в Украине</p>
+          </li>
+          <li class="align">
+            <i class="fas fa-hand-holding-heart about_icon"></i>
+            <p>100% Handmade</p>
+          </li>
+        </ul>
+      </section>
+      <section class="order align">
+        <a id="buy"></a>
+        <h2 class="sect_title">Заказать</h2>
+        <div class="order_list_form align">
+          <ul>
+            <li>Выберите товар <a href="#catalog">в каталоге</a></li>
+            <li>Заполните форму заказа</li>
+            <li>Ожидайте, мы свяжемся с вами для оформления заказа</li>
+          </ul>
+          <form class="order_form" action="index.html" method="post">
+            <input type="text" name="name" placeholder="Как Вас зовут">
+            <input type="email" name="email" placeholder="Введите Ваш email">
+            <input type="tel" name="phone" placeholder="+38(...) ... .. ..">
+            <input type="submit" name="send" value="Заказать" class="order_submit">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer_content align">
+      <div class="footer_logo_contacts align">
+        <ul class="align">
+          <li><a href="#top">На главную</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#buy">Как заказать?</a></li>
+        </ul>
+      </div>
+      <div class="footer_social">
+        <a href="#" class="header_icon"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/vooptoys/" target="_blank" class="header_icon"><i class="fab fa-instagram "></i></a>
+        <a href="#" class="header_icon"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <img src="img/logo.png" alt="logo voop" class="footer_picture">
+    </footer>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+  </html>
