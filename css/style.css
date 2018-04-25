@@ -1,0 +1,206 @@
+/*---GENERAL STYLES---*/
+* {
+  outline: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #bea67c;
+}
+a:active {
+
+}
+/**/
+a.link:hover::after,
+a.link:focus::after {
+  width: 100%;
+}
+a.link {
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s linear;
+}
+a.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #bea67c;
+  transition: width 0.3s linear;
+}
+/*--------------------
+font-family: 'Reenie Beanie', cursive;
+font-family: 'Shadows Into Light Two', cursive;
+/*--------------------*/
+header {
+  background: url("../img/bg/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+/*---NAVIGATION---*/
+.logo-nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 90%;
+  position: fixed;
+  padding: 0.5em 5%;
+  z-index: 100;
+}
+.logo, .nav-menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo {
+  width: calc(10em - 4px);
+}
+.logo img {
+  width: 100%;
+}
+.nav-menu {
+  width: calc(100% - (10em + 4px));
+  text-transform: uppercase;
+  text-align: right;
+}
+nav a {
+  display: inline-block;
+  margin: 0.5em;
+  padding-bottom: 0.2em;
+}
+/*----*/
+.checkbox_trigger {
+  display: none;
+}
+.nav-menu label{
+  display: inline-block;
+  position: relative;
+  height: 23px;
+  width: 40px;
+  cursor: pointer;
+  margin: 0;
+}
+.nav-menu span{
+  position: absolute;
+  display: block;
+  background: #bea67c;
+  z-index: 3;
+  width: 37px;
+  height: 1px;
+}
+.nav-menu span:nth-child(1){
+  top: 0;
+  left: 3px;
+}
+.nav-menu span:nth-child(2){
+  top: 48%;
+  left: 3px;
+}
+.nav-menu span:nth-child(3){
+  bottom: 0;
+  left: 3px;
+}
+.drop_menu {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 1.5em;
+  position: fixed;
+  top: 13%;
+  right: -100%;
+  display: inline-block;
+  height: 87%;
+  width: 20%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  z-index: 99;
+  transition: all 0.5s linear;
+}
+.drop_menu li{
+  padding: 1em 0;
+  width: 100%;
+}
+/*---Checkbox--Burger menu--Change while active---*/
+.checkbox_trigger:checked ~.drop_menu{
+  animation: slideInRight 0.5s linear;
+  right: 0;
+}
+.checkbox_trigger:checked ~ label span:nth-child(1){
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 12px;
+    z-index: 6;
+  }
+  .checkbox_trigger:checked ~ label span:nth-child(2){
+    animation: fadeOut 0.3s linear;
+    opacity: 0;
+  }
+  .checkbox_trigger:checked ~ label span:nth-child(3){
+    transform: rotate(45deg);
+    transition: 0.5s;
+    position: absolute;
+    top: 12px;
+    right: 17px;
+    z-index: 6;
+  }
+  /*---Not checked---*/
+  .checkbox_trigger:not(:checked) ~ label span{
+    transform: rotate(0deg);
+    transition: 0.5s;
+  }
+/**/
+/*----*/
+.header-main {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.header-pic {
+  width: 35%;
+  max-width: 40em;
+  position: absolute;
+  left: 25%;
+  bottom: -2em;
+  z-index: 10;
+}
+.header-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 1s linear;
+}
+.header-main:hover .header-overlay {
+  opacity: 1;
+}
+.header-pic img {
+  width: 100%;
+}
+.header-title {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  z-index: 12;
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.header-title h2{
+  font-weight: 400;
+  border-top: 3px solid #bea67c;
+  border-bottom: 3px solid #bea67c;
+  text-transform: capitalize;
+}
