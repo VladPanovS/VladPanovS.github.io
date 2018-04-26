@@ -9,6 +9,7 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 a:visited {
   color: #fff;
@@ -17,7 +18,7 @@ a:hover {
   color: #bea67c;
 }
 a:active {
-
+  color: #bbb;
 }
 /**/
 a.link:hover::after,
@@ -40,6 +41,45 @@ a.link::after {
   background: #bea67c;
   transition: width 0.3s linear;
 }
+.title {
+  color: #bea67c;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.subtitle {
+  color: #4d5c66;
+  font-size: 3.5vw;
+  text-transform: capitalize;
+  margin-bottom: 0.7em;
+}
+.th_line{
+  text-decoration: line-through;
+}
+.button{
+  display: inline-block;
+  line-height: 2.5;
+  width: 15em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4d5c66;
+  border: 2px solid #bea67c;
+  cursor: pointer;
+}
+section {
+  padding: 2% 0;
+}
+article {
+  display: inline-block;
+  width: 50%;
+  min-width: 18em;
+  line-height: 2;
+  font-weight: 300;
+  font-size: 0.9em;
+}
 /*--------------------
 font-family: 'Reenie Beanie', cursive;
 font-family: 'Shadows Into Light Two', cursive;
@@ -52,7 +92,7 @@ header {
 }
 /*---NAVIGATION---*/
 .logo-nav {
-  background-color: rgba(255, 255, 255, 0.3);
+  /*background-color: rgba(255, 255, 255, 0.3);*/
   width: 90%;
   position: fixed;
   padding: 0.5em 5%;
@@ -128,6 +168,10 @@ nav a {
   padding: 1em 0;
   width: 100%;
 }
+.drop_menu .fab {
+  font-size: 1.2em;
+  margin: 0.1em;
+}
 /*---Checkbox--Burger menu--Change while active---*/
 .checkbox_trigger:checked ~.drop_menu{
   animation: slideInRight 0.5s linear;
@@ -189,7 +233,7 @@ nav a {
 .header-title {
   display: inline-block;
   position: absolute;
-  right: 10%;
+  right: 22%;
   top: 30%;
   z-index: 12;
   text-align: center;
@@ -203,4 +247,117 @@ nav a {
   border-top: 3px solid #bea67c;
   border-bottom: 3px solid #bea67c;
   text-transform: capitalize;
+}
+/*---WHO I AM---*/
+.wrapper {
+  text-align: center;
+}
+.fab{
+  font-size: 2em;
+  color: #bea67c;
+  transition: color 0.5s linear;
+  margin: 0.5em;
+}
+.fab.fa-facebook-f:before{
+  content: "\f39e";
+}
+.fab.fa-facebook-f:hover{
+  color: #3f51b5;
+}
+.fab.fa-instagram:before{
+  content: "\f16d";
+}
+.fab.fa-instagram:hover{
+  color: #ff1293;
+}
+.fab.fa-linkedin:before{
+  content: "\f08c";
+}
+
+.fab.fa-linkedin:hover{
+    color: #3f51b5;
+}
+.fab.fa-github::before{
+  content: "\f09b";
+}
+.fab.fa-github:hover{
+  color: #000;
+}
+/*---WORKS---*/
+.works {
+  text-align: center;
+}
+.work-top-list {
+  display: inline-block;
+  width: 80%;
+}
+.work-top-list li {
+  position: relative;
+  display: inline-block;
+  min-width: 15em;
+  width: calc(30% - 4px);
+  height: 15em;
+  margin: 1.5%;
+}
+.work-top-list li:hover .hover_box {
+  opacity: 1;
+}
+.work-top-list li:first-child {
+  background: url("../img/pic/works/first.png") no-repeat center center;
+  background-size: cover;
+}
+.work-top-list li:nth-child(2) {
+  background: url("../img/pic/works/sec.jpg") no-repeat center center;
+  background-size: cover;
+}
+.work-top-list li:last-child {
+  background: url("../img/pic/works/third.jpg") no-repeat center center;
+  background-size: cover;
+}
+.work-top-list li img {
+  width: 100%;
+}
+.rating, .list-title {
+  width: 90%;
+  text-align: left;
+  padding: 5%;
+}
+.list-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.hover_box {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s linear;
+}
+/*---Skills---*/
+.skills {
+  background: url("../img/bg/bg_skills.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.skills article {
+  color: #fff;
+}
+.skills-item, .skills-item li {
+  display: inline-block;
+}
+.skills-item {
+  color: #fff;
+  font-weight: 700;
+  width: 80%;
+}
+.sk-it {
+  font-size: 6em;
+  color: #bea67c;
+  margin: 0.5em;
 }
