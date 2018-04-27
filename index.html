@@ -33,10 +33,10 @@
             <span></span>
           </label>
           <ul class="drop_menu" id="menu">
-              <li><a href="#" class="link">Junior Markup developer</a></li>
-              <li><a href="#" class="link">My works</a></li>
-              <li><a href="#" class="link">My skills</a></li>
-              <li><a href="#" class="link">Contact</a></li>
+              <li><a href="#whoi" class="link">Junior Markup developer</a></li>
+              <li><a href="#work" class="link">My works</a></li>
+              <li><a href="#skill" class="link">My skills</a></li>
+              <li><a href="#contact" class="link">Contact</a></li>
               <li>
                 <div class="who-i-am-info">
                   <a href="https://www.facebook.com/vlad.panov.13" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -64,8 +64,8 @@
     </header>
     <main>
       <section class="who-i-am">
-        <a name="whoi"></a>
-        <div class="wrapper">
+        <a id="whoi"></a>
+        <div class="wrapper wow zoomIn" data-wow-duration="1.3s">
             <h2 class="title">Who i am</h2>
             <p class="subtitle"> Let me introduce my self </p>
             <article>Hi there! I`m <span class="th_line">studying</span> junior HTML\CSS coder. I`m looking for new opportunities and knowledges. Also i`m looking for interesting job and interesting projects.
@@ -82,10 +82,11 @@
         </div>
       </section>
       <section class="works">
-        <h2 class="title">What i did</h2>
-        <p class="subtitle">Look At My Works</p>
+        <a id="work"></a>
+        <h2 class="title wow fadeInLeft" data-wow-duration="1.3s">What i did</h2>
+        <p class="subtitle wow fadeInLeft" data-wow-duration="1s">Look At My Works</p>
         <p class="title">Most complicated projects</p>
-        <ul class="work-top-list">
+        <ul class="work-top-list wow zoomIn" data-wow-duration="2s">
           <li>
             <a href="#">
               <div class="hover_box" title="To see this site you need to download it">
@@ -136,6 +137,7 @@
         </div>
       </section>
       <section class="skills">
+        <a id="skill"></a>
         <h2 class="title">What i can do</h2>
         <p class="subtitle">My skills</p>
         <article>As i say previously i dont know all, <span class="th_line">but i know How To Meet Ladies.</span>
@@ -162,13 +164,14 @@
           </ul>
       </section>
       <section class="contact">
+        <a id="contact"></a>
         <h2 class="title"> Feel free to contact me </h2>
         <p class="subtitle"> Work with me </p>
         <ul class="contact-list">
-          <li>
+          <li class="wow fadeInLeft" data-wow-duration="1.3s">
             <img src="img/pic/contact_work.jpg" alt="workspace">
           </li>
-          <li>
+          <li class="wow fadeInRight" data-wow-duration="1.3s">
             <p class="contact-list-title">Some Info</p>
             <p>For now i`ve little experience of developing but
               <br> i work day & night and i`m coding for day & night.
@@ -189,9 +192,12 @@
     </main>
     <footer>
       <p>Design and develop maded by VladPanov</p>
-      <p>This is inline-block version, for "Flex" version<a href="#">click here</a></p>
-      <p>You can download my CV by<a href="#">this link</a></p>
+      <p>This is inline-block version, for "Flex" version <a href="#">click here</a></p>
+      <p>You can download my CV by <a href="#">this link</a></p>
     </footer>
   </body>
   <!--SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
   </html>
