@@ -361,3 +361,68 @@ nav a {
   color: #bea67c;
   margin: 0.5em;
 }
+/*---CONTACT---*/
+.contact {
+  text-align: center;
+}
+.contact-list {
+  display: inline-block;
+  width: calc(80% - 4px);
+  /*border: 2px solid #bea67c;
+  border-radius: 5px; */
+}
+.contact-list li {
+  display: inline-block;
+  min-width: 15em;
+  width: calc(46% - 4px);
+  padding: 2%;
+  vertical-align: middle;
+}
+.contact-list-title::before, .contact-list-title::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 20px;
+  background: #4d5c66;
+  vertical-align: middle;
+}
+.contact-list-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #bea67c;
+}
+.contact-list p {
+  line-height: 2;
+  font-weight: 300;
+}
+.contact-list img {
+  width: 100%;
+}
+.fab.fa-google:before{
+  content: "\f1a0";
+}
+.fab.fa-google:hover{
+  color: #00b910;
+}
+.fab.fa-youtube:before{
+  content: "\f167";
+}
+.fab.fa-youtube:hover{
+  color: #e21b1b;
+}
+/*---FOOTER---*/
+footer {
+  padding: 1%;
+  background: url("../img/bg/footer_bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  line-height: 1.5;
+}
+footer p {
+  font-size: 0.9em;
+}
