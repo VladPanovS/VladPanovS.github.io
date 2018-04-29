@@ -1,4 +1,12 @@
 @media (max-width: 768px) {
+  /*General*/
+  header, .skills {
+    background-attachment: scroll;
+  }
+  .who-i-am::before, .who-i-am::after, .contact::before, .contact::after {
+    content: "";
+    display: none;
+  }
   /*Header*/
   .drop_menu {
     width: 100%;

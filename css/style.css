@@ -58,6 +58,21 @@ a.link::after {
 .th_line{
   text-decoration: line-through;
 }
+.min-button {
+  display: inline-block;
+  border: 1px solid #bea67c;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  line-height: 1.5;
+  padding: 0.3em;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.min-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #bea67c;
+}
 .button{
   display: inline-block;
   line-height: 2.5;
@@ -250,6 +265,31 @@ nav a {
   text-transform: capitalize;
 }
 /*---WHO I AM---*/
+.who-i-am::before {
+  content: "Vlad";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 13em;
+  color: rgba(190, 166, 124, 0.3);
+  position: absolute;
+  top: 0;
+  right: -20%;
+}
+.who-i-am {
+  position: relative;
+}
+.who-i-am::after {
+  content: "markup";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 15em;
+  color: rgba(190, 166, 124, 0.3);
+  position: absolute;
+  bottom: -0.8em;
+  left: 0;
+}
 .wrapper {
   text-align: center;
 }
@@ -287,6 +327,9 @@ nav a {
 /*---WORKS---*/
 .works {
   text-align: center;
+}
+.works .wrapper {
+  visibility: hidden;
 }
 .work-top-list {
   display: inline-block;
@@ -363,8 +406,31 @@ nav a {
   margin: 0.5em;
 }
 /*---CONTACT---*/
+.contact::before {
+  content: "Hire";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 13em;
+  color: rgba(190, 166, 124, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
 .contact {
+  position: relative;
   text-align: center;
+}
+.contact::after {
+  content: "me";
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 13em;
+  color: rgba(190, 166, 124, 0.3);
+  position: absolute;
+  bottom: 0;
+  right: 0%;
 }
 .contact-list {
   display: inline-block;
@@ -420,7 +486,6 @@ footer {
   padding: 1%;
   background: url("../img/bg/footer_bg.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   line-height: 1.5;
 }
