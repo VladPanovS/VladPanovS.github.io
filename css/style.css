@@ -287,7 +287,7 @@ nav a {
   font-size: 15em;
   color: rgba(190, 166, 124, 0.3);
   position: absolute;
-  bottom: -0.8em;
+  bottom: -1em;
   left: 0;
 }
 .wrapper {
@@ -405,6 +405,9 @@ nav a {
   color: #bea67c;
   margin: 0.5em;
 }
+.sk-it:hover, .sk-it:focus {
+  animation: flip 1s linear;
+}
 /*---CONTACT---*/
 .contact::before {
   content: "Hire";
@@ -431,6 +434,7 @@ nav a {
   position: absolute;
   bottom: 0;
   right: 0%;
+  z-index: -1;
 }
 .contact-list {
   display: inline-block;

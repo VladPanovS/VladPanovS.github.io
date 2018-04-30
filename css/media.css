@@ -7,6 +7,9 @@
     content: "";
     display: none;
   }
+  .hover_box {
+    opacity: 1;
+  }
   /*Header*/
   .drop_menu {
     width: 100%;
