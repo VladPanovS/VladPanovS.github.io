@@ -1,201 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/logo_icon.png" type="image/png">
-    <title>Vlad Panov</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>X-Beauty by Hanna</title>
     <!---FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <!---CSS-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/burgermenu.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
   </head>
 
   <body>
-    <header>
-      <a name="top"></a>
-      <div class="logo-nav">
-        <div class="logo">
-          <h1>
-            <img src="img/logo.png" alt="Mr.Sel logo">
-          </h1>
-        </div>
-          <nav class="nav-menu">
-          <input type="checkbox" id="hmt" class="checkbox_trigger">
-          <label for="hmt">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <ul class="drop_menu" id="menu">
-              <li><a href="#whoi" class="link">Junior Markup developer</a></li>
-              <li><a href="#work" class="link">My works</a></li>
-              <li><a href="#skill" class="link">My skills</a></li>
-              <li><a href="#contact" class="link">Contact</a></li>
-              <li>
-                <div class="who-i-am-info">
-                  <a href="https://www.facebook.com/vlad.panov.13" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/panovlad/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/vlad-panov-726669152/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </li>
-          </ul>
-        </nav>
+    <div id="preloader" class="f_box-c_c">
+      <div class="load">
       </div>
-      <div class="header-main">
-        <div class="header-pic">
-          <img src="img/pic/I.png" alt="my photo">
+    </div>
+    <header>
+      <div class="logo-nav hiden">
+        <a href="#top">
+          <h1 class="logo">
+            <img src="img/logo.png" alt="X-beauty by Hanna logo" class="main-logo-nav">
+          </h1>
+        </a>
+        <nav class="nav-aside">
+          <p><a href="index.html" class="link">Главная</a></p>
+          <p><a href="pages/price.html" class="link">Прайс</a></p>
+          <p><a href="#education" class="link school-link">Учебный центр</a></p>
+          <p><a href="pages/proffesionals.html" class="link">Мастера</a></p>
+          <p><a href="#contact" class="link contact-link">Контакты</a></p>
+        </nav>
+        <div class="contact-info">
+          <p>Каланчевский тупик 3/5
+            <br>Московская область
+            <br>г. Москва
+            <br>Российская Федерация
+            <p><a href="tel:84991106191">8 (499) 1106191</a><p>
+            <p><a href="tel:9154500055">915 450 00 55</a><p>
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/xbeautybyhanna" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://vk.com/xbeauty_by_hanna"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
         </div>
-        <div class="header-overlay"></div>
-        <div class="header-title">
-          <h3>My
-            <br>portfolio</h3>
-          <h2>Vlad Panov</h2>
-          <p>Junior
-            <br>Markup
-            <br>developer</p>
-        </div>
+      </div>
+      <div class="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
       </div>
     </header>
     <main>
-      <section class="who-i-am">
-        <a id="whoi"></a>
-        <div class="wrapper wow zoomIn" data-wow-duration="1.3s">
-            <h2 class="title">Who i am</h2>
-            <p class="subtitle"> Let me introduce my self </p>
-            <article>Hi there! I`m <span class="th_line">studying</span> junior HTML\CSS coder. I`m looking for new opportunities and knowledges. Also i`m looking for interesting job and interesting projects.
-              I`m ready for complicated tasks and challenges! Of course i dont know all at the moment, but i`m trying to do my best!
-            </article>
-            <div class="who-i-am-info-button">
-                <div class="who-i-am-info">
-                  <a href="https://www.facebook.com/vlad.panov.13" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/panovlad/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/vlad-panov-726669152/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  <a href="https://github.com/VladPanovS" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
+      <a id="top"></a>
+      <section class="main-header">
+        <div class="header-title">
+          <div class="header-title-logo">
+            <img src="img/logo.png" alt="X-Beauty by Hanna main logo">
+          </div>
+          <div class="arrow-scroll">
+            <a href="#"><img src="img/icons/arrow.png" alt="scroll arrow"></a>
+          </div>
         </div>
       </section>
-      <section class="works">
-        <a id="work"></a>
-        <h2 class="title wow fadeInLeft" data-wow-duration="1.3s">What i did</h2>
-        <p class="subtitle wow fadeInLeft" data-wow-duration="1s">Look At My Works</p>
-        <p class="title">Most complicated projects</p>
-        <ul class="work-top-list wow zoomIn" data-wow-duration="2s">
-          <li>
-              <div class="hover_box" title="To see this site you need to download it">
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                </div>
-                <div class="list-title">
-                  <span>Non commercial</span>
-                  <a href="https://github.com/VladPanovS/wooder" target="_blank" class="min-button">Download</a>
-                </div>
-              </div>
+      <section class="services">
+        <a id="main-content"></a>
+        <ul class="lists services-list">
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_one.jpg" alt="маникюр">
           </li>
-          <li>
-              <div class="hover_box" title="To see this site you need to download it">
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half"></i>
-                </div>
-                <div class="list-title">
-                  <span>Non commercial</span>
-                  <a href="https://github.com/VladPanovS/B-W-" target="_blank" class="min-button">Download</a>
-                </div>
-              </div>
-          </li>
-          <li>
-              <div class="hover_box" title="To see this site you need to download it">
-                <div class="rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="list-title">
-                  <span>Non commercial</span>
-                  <a href="https://github.com/VladPanovS/Bhromaon" target="_blank" class="min-button">Download</a>
-                </div>
-              </div>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
+            <div class="lists-wrapper">
+                <h2 class="title">Маникюр</h2>
+                <p>Косметическая процедура по обработке ногтей на пальцах рук и самих пальцев, а то и всей кисти рук.</p>
+                <a href="pages/price.html" class="button">Посмотреть прайс</a>
+            </div>
           </li>
         </ul>
-        <div class="wrapper">
-          <a class="button">Other projects</a>
-          <ul class="work-main-list hidden"></ul>
+        <ul class="lists services-list">
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_two.jpg" alt="окрашивание">
+          </li>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
+            <div class="lists-wrapper">
+                <h2 class="title">Окрашивание</h2>
+                <p>Нанесение красящего вещества на волосы. Окрашивают волосы с
+                  целью, изменить естественный цвет волос, придать ему новый оттенок, блеск.</p>
+                <a href="pages/price.html" class="button">Посмотреть прайс</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="lists services-list">
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_three.jpg" alt="наращивание ресниц">
+          </li>
+          <li class="wow slideInRight" data-wow-duration="1.5s">
+            <div class="lists-wrapper">
+                <h2 class="title">Наращивание ресниц</h2>
+                <p>Процесс удлинения и увеличения объема натуральных ресниц при
+                  помощи искусственных ресниц. Различают два вида наращивания ресниц:
+                  поресничное наращивание (японское наращивание ресниц) и пучковое наращивание.</p>
+                <a href="pages/price.html" class="button">Посмотреть прайс</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="lists services-list">
+          <li class="wow slideInLeft" data-wow-duration="1.5s">
+            <img src="img/pic/services_one.jpg" alt="солярий">
+          </li class="wow slideInRight" data-wow-duration="1.5s">
+          <li class="wow slideInRight" data-wow-duration="1.5s">
+            <div class="lists-wrapper">
+                <h2 class="title">Солярий</h2>
+                <p>Специально оборудованная открытая площадка для проведения
+                  дозированных облучений прямым или рассеянным излучением, полученным
+                  от специальных эритемных ультрафиолетовых ламп,
+                  в стекло колбы которых вводятся специальные добавки, не пропускающие
+                  опасную коротковолновую часть УФ спектра.</p>
+                <a href="pages/price.html" class="button">Посмотреть прайс</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="school">
+        <a id="education"></a>
+        <div class="school-slider">
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_one.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_two.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_three.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
+          <div class="img-box-wrp">
+            <div class="img-box">
+              <a href="#"><img src="img/pic/school_four.jpg" alt="обучение картинка"></a>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="skills">
-        <a id="skill"></a>
-        <h2 class="title">What i can do</h2>
-        <p class="subtitle">My skills</p>
-        <article>As i say previously i dont know all, <span class="th_line">but i know How To Meet Ladies.</span>
-           So i have some skills and abilities at this moment.
-          I`m always training and learning and i`ve got skills. You can see some of them under the text.</article>
-          <ul class="skills-item">
+      <section class="contact-socials-box">
+        <a id="contact"></a>
+        <div class="social-info">
+          <h2 class="section-title">Мы в социальных сетях</h2>
+          <ul class="social-info-list">
             <li>
-              <i class="fab fa-html5 sk-it wow flip" data-wow-duration="1.3s"></i>
-              <p>HTML 5</p>
+              <a href="https://www.instagram.com/xbeautybyhanna" target="_blank">
+                <div>
+                  <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
+                </div>
+                <p><i class="fab fa-instagram sil-icon"></i>instagram</p>
+              </a>
             </li>
             <li>
-              <i class="fab fa-css3-alt sk-it wow flip" data-wow-duration="1.4s"></i>
-              <p>CSS 3</p>
+              <a href="https://vk.com/xbeauty_by_hanna" target="_blank">
+                <div>
+                  <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
+                </div>
+                <p><i class="fab fa-vk sil-icon"></i>VK</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-code sk-it wow flip" data-wow-duration="1.5s"></i>
-              <p>jQuery</p>
+              <a href="https://www.instagram.com/xbeautybyhanna" target="_blank">
+                <div>
+                  <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
+                </div>
+                <p><i class="fab fa-facebook sil-icon"></i>facebook</p>
+              </a>
             </li>
             <li>
-              <i class="fas fa-language sk-it wow flip" data-wow-duration="1.6s"></i>
-              <p>English</p>
+              <a href="#">
+                <div>
+                  <img src="img/icons/social_icon.jpg" alt="иконка соц.сети">
+                </div>
+                <p><i class="far fa-comment-alt sil-icon"></i>Отзывы</p>
+              </a>
             </li>
           </ul>
-      </section>
-      <section class="contact">
-        <a id="contact"></a>
-        <h2 class="title"> Feel free to contact me </h2>
-        <p class="subtitle"> Work with me </p>
-        <ul class="contact-list">
-          <li class="wow fadeInLeft" data-wow-duration="1.3s">
-            <img src="img/pic/contact_work.jpg" alt="workspace">
-          </li>
-          <li class="wow fadeInRight" data-wow-duration="1.3s">
-            <p class="contact-list-title">Some Info</p>
-            <p>For now i`ve little experience of developing but
-              <br> i work day & night and i`m coding for day & night.
-              <br>I`m looking for job of all types.
-              <br>Feel free to contact me by any of this links
-            </p>
-            <div class="contac-list-socials">
-              <a href="https://www.facebook.com/vlad.panov.13" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/panovlad/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/vlad-panov-726669152/" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/VladPanovS" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="mailto:panovlad13@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
-              <a href="https://www.youtube.com/channel/UCl0yHzZQ07hRoBrwtTp58Hg" target="_blank"><i class="fab fa-youtube"></i></a>
-            </div>
-          </li>
-        </ul>
+        </div>
+        <div class="contacts">
+          <h2 class="section-title">Как нас найти</h2>
+          <ul class="lists contact-list">
+            <li>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.250736387799!2d37.651256315931334!3d55.77151698055844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7c5fedd983%3A0xb0da89e31ff48f4b!2z0JrQsNC70LDQvdGH0LXQstGB0LrQuNC5INGC0YPQvy4sIDMvNSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2sua!4v1525517730771" allowfullscreen></iframe>
+            </li>
+            <li>
+              <div class="lists-wrapper contact-info">
+                <h2 class="title">Контакты</h2>
+                <p>Каланчевский тупик 3/5
+                  <br>Московская область
+                  <br>г. Москва
+                  <br>Российская Федерация
+                  <p><a href="tel:84991106191">8 (499) 1106191</a><p>
+                  <p><a href="tel:9154500055">915 450 00 55</a><p>
+                </p>
+                <div class="social-links">
+                  <a href="https://www.instagram.com/xbeautybyhanna" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://vk.com/xbeauty_by_hanna"><i class="fab fa-vk"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Design and develop made by VladPanov - panovlad13@gmail.com</p>
-      <p>You can download my CV by <a href="VladPanov.pdf" download>this link</a></p>
-    </footer>
+    <footer></footer>
     <!--SCRIPTS-->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"
+    integrity="sha256-F0O1TmEa4I8N24nY0bya59eP6svWcshqX1uzwaWC4F4="
+    crossorigin="anonymous"></script>
+    <script src="js/preloader.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/slick-start.js"></script>
+    <script src="js/script.js">
+
+    </script>
   </body>
-</html>
+  </html>

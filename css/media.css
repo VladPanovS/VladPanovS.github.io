@@ -1,34 +1,40 @@
 @media (max-width: 768px) {
-  /*General*/
-  header, .skills {
-    background-attachment: scroll;
+  /*GENERAL*/
+  header {
+    width: 0;
+    display: block;
   }
-  .who-i-am::before, .who-i-am::after, .contact::before, .contact::after {
-    content: "";
-    display: none;
-  }
-  .hover_box {
-    opacity: 1;
-  }
-  /*Header*/
-  .drop_menu {
+  main {
     width: 100%;
+  }
+  .lists li {
+    width: 98%;
+  }
+  /*-------*/
+  .burger {
+    display: inline-block;
   }
   .logo-nav {
-    height: 11%;
+    opacity: 0;
+     width: 96%;
+     height: 98%;
+     transition: all 1s linear;
+     background: rgba(0, 0, 0, 0.9);
+     overflow: auto;
   }
-  .header-pic {
-    width: 65%;
-    left: 10%;
+  .hiden {
+    z-index: -3;
+    opacity: 0;
   }
-  .header-title {
-    right: 0;
-    width: 100%;
+  .visible {
+    opacity: 1;
+    z-index: 99;
   }
-}
-@media (max-width: 400px) {
-  .header-pic {
-    width: 110%;
-    left: 0%;
+  .main-header {
+    background-size: auto;
+  }
+  /*pages*/
+  .masters-list li {
+    height: 8em;
   }
 }
