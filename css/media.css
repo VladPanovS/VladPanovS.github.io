@@ -30,9 +30,6 @@
     opacity: 1;
     z-index: 99;
   }
-  .main-header {
-    background-size: auto;
-  }
   /*pages*/
   .masters-list li {
     height: 8em;
