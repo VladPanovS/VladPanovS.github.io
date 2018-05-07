@@ -207,7 +207,7 @@ main {
 /*---HEADER--*/
 .main-header {
   background: url("../img/bg/header_bg_3_3.jpg") no-repeat center center;
-  background-attachment: fixed;
+  background-size: cover;
   height: 100vh;
   text-align: center;
 }
