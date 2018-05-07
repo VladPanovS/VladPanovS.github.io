@@ -1,25 +1,21 @@
 $( document ).ready(function() {
+    //animation
+             var wow = new WOW({
+               mobile: false,
+             });
              new WOW().init();
-    //scroll
-    $('.logo').click(function(){
-           $('html, body').animate({scrollTop:$('#top').position().top}, 2000);
-    });
-    $('.arrow-scroll').click(function(){
-           $('html, body').animate({scrollTop:$('#main-content').position().top}, 2000);
-    });
-    $('.school-link').click(function(){
-           $('html, body').animate({scrollTop:$('#education').position().top}, 2000);
-    });
-    $('.contact-link').click(function(){
-           $('html, body').animate({scrollTop:$('#contact').position().top}, 2000);
-    });
-
     //burgrer menu
              $(".burger").click(function(){
              $(".burger-line").toggleClass("line-active")
-             $(".logo-nav").toggleClass("visible")
-             $(".visible").show();
+             $(".burger").toggleClass("rotate")
+             $(".menu").toggleClass("open");
          });
   
-
+   //rooms dropdowns
+    //         $(".complex-drp").click(function(){
+      //       $(".complex-drp-hidden").toggleClass("open-drp");
+        //   });
+        //     $(".complex-drp-two").click(function(){
+        //     $(".complex-drp-hidden-two").toggleClass("open-drp-two")
+        //   });
 });

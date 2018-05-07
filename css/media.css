@@ -1,37 +1,19 @@
 @media (max-width: 768px) {
-  /*GENERAL*/
-  header {
-    width: 0;
-    display: block;
+  /*nav*/
+  .phone-nav-wrp .phone {
+    display: none;
   }
-  main {
-    width: 100%;
+  /*ENTERTAIMENT*/
+  .entertaiment-list > li:first-child {
+    display: none;
   }
-  .lists li {
-    width: 98%;
+  .entertaiment-list > li:last-child {
+    left: 0;
+    width: calc(100% - 4px);
   }
-  /*-------*/
-  .burger {
-    display: inline-block;
+  /*CONTACT*/
+  .contact-list-map li, /*rooms*/ .rooms-list li {
+    width: calc(100% - 4px);
   }
-  .logo-nav {
-    opacity: 0;
-     width: 96%;
-     height: 98%;
-     transition: all 1s linear;
-     background: rgba(0, 0, 0, 0.9);
-     overflow: auto;
-  }
-  .hiden {
-    z-index: -3;
-    opacity: 0;
-  }
-  .visible {
-    opacity: 1;
-    z-index: 99;
-  }
-  /*pages*/
-  .masters-list li {
-    height: 8em;
-  }
+
 }
