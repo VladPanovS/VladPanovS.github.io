@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+  /*nav*/
+  .phone-btn-mobile {
+    display: inline-block;
+  }
+  .phone-nav-wrp .phone {
+    display: none;
+  }
+  /*ENTERTAIMENT*/
+  .entertaiment-list > li:first-child {
+    display: none;
+  }
+  .entertaiment-list > li:last-child {
+    left: 0;
+    width: calc(100% - 4px);
+  }
+  .cost-free-list li {
+    width: 100%;
+  }
+  /*CONTACT*/
+  .contact-list-socials li {
+    height: 11em;
+  }
+  .contact-list-map li, /*rooms*/ .rooms-list li {
+    width: calc(100% - 4px);
+  }
+
+}
