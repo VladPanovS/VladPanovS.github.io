@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  /*General*/
+  header, .skills {
+    background-attachment: scroll;
+  }
+  .who-i-am::before, .who-i-am::after, .contact::before, .contact::after {
+    content: "";
+    display: none;
+  }
+  .hover_box {
+    opacity: 1;
+  }
+  /*Header*/
+  .drop_menu {
+    width: 100%;
+  }
+  .logo-nav {
+    height: 11%;
+  }
+  .header-pic {
+    width: 65%;
+    left: 10%;
+  }
+  .header-title {
+    right: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .header-pic {
+    width: 110%;
+    left: 0%;
+  }
+}
