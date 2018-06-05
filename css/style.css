@@ -346,11 +346,19 @@ nav a {
 .work-top-list li:hover .hover_box {
   opacity: 1;
 }
-.work-top-list li:first-child {
-  background: url("../img/pic/works/first.png") no-repeat center center;
+.work-top-list li:nth-child(1) {
+  background: url("../img/pic/works/four.jpg") no-repeat center center;
   background-size: cover;
 }
 .work-top-list li:nth-child(2) {
+  background: url("../img/pic/works/five.jpg") no-repeat center center;
+  background-size: cover;
+}
+.work-top-list li:nth-child(3){
+  background: url("../img/pic/works/first.png") no-repeat center center;
+  background-size: cover;
+}
+.work-top-list li:nth-child(4) {
   background: url("../img/pic/works/sec.jpg") no-repeat center center;
   background-size: cover;
 }
